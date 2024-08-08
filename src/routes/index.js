@@ -5,6 +5,7 @@ import postRoutes from './post.routes.js';
 
 const router =  express.Router()
 
+router.get('/', (req, res)=>{return res})
 router.use('/user', userRoutes);
 router.use('/post', auth, postRoutes)
 
